@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Family Tree Creator", "Family Tree Creator\Family Tree Creator.csproj", "{D9BE29C6-E3EB-4D2F-B9AD-7312FAD74A6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilyTreeClassLib", "FamilyTreeClassLib\FamilyTreeClassLib.csproj", "{AC68C19D-46C6-4B56-ACE5-943F3C68BC54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9BE29C6-E3EB-4D2F-B9AD-7312FAD74A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9BE29C6-E3EB-4D2F-B9AD-7312FAD74A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9BE29C6-E3EB-4D2F-B9AD-7312FAD74A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9BE29C6-E3EB-4D2F-B9AD-7312FAD74A6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC68C19D-46C6-4B56-ACE5-943F3C68BC54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC68C19D-46C6-4B56-ACE5-943F3C68BC54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC68C19D-46C6-4B56-ACE5-943F3C68BC54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC68C19D-46C6-4B56-ACE5-943F3C68BC54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E88EFEC-50C4-42CD-9236-E69044EB74CC}
+	EndGlobalSection
+EndGlobal
