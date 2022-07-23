@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FamilyTreeClassLib
 {
-    internal class Familly3 : Family1
+    public class Family3 : Family1
     {
-        public Familly3(string family, Person person) : base(family, person)
+        public Family3(string family) : base(family)
         {
         }
     }
