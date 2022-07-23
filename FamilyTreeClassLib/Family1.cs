@@ -1,20 +1,52 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FamilyTreeClassLib
+﻿namespace FamilyTreeClassLib
 {
-    internal class Family1
+    public class Family1
     {
-        string family { get; set; }
-        Person person { get; set; }
-        
-        public Family1(string family,Person person)
+        public Person[] persons { get; set; } = new Person[4];
+        public string family { get; set; }
+
+        public Family1(string family)
         {
             this.family = family;
-            this.person = person;
+        }
+        public override string ToString()
+        {
+            return $"Family:  {family}";
+        }
+
+        public void AddPerson(Person person, string familyMember1)
+        {
+            Person pers = new Person(person.lastName, person.firstName, person.age, person.dateOfBirth, person.dateOfDeath, person.gender);
+
+            for (int i = 0; i < persons.Length; i++)
+            {
+
+                if (persons[i] == null)
+                {
+
+                    persons[i] = pers;
+                    Servis.TransformDate(persons[i]);
+                    persons[i].familyMember = familyMember1;
+                    persons[i].howManyYears = pers.howManyYears;
+                    if (persons[i].familyMember != "Ch")
+                    {
+                        if (persons[i].gender == "female")
+                        {
+                            persons[i].lastName = $"{persons[0].lastName}а (Девичья: {person.lastName})";
+                        }
+                    }
+                    else
+                    {
+                        if (persons[i].gender == "female")
+                        {
+                            persons[i].lastName = $"{persons[0].lastName}а";
+                        }
+                        else { persons[i].lastName = persons[0].lastName; }
+                        break;
+                    }
+                    break;
+                }
+            }
         }
     }
 }
